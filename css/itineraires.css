@@ -1,0 +1,149 @@
+/* Section Itineraires */
+#itineraires {
+   background-color: #2c3e50;
+   color: #ecf0f1;
+   min-height: 6000vh;
+}
+
+#itineraires h2 {
+   color: #3498db;
+   font-size: 3em;
+   margin-bottom: 30px;
+}
+
+.itineraires__intro {
+   max-width: 800px;
+   margin: 0 auto 30px;
+   text-align: justify;
+   line-height: 1.6;
+}
+
+.itineraires_nav {
+   margin-bottom: 30px;
+}
+
+.itineraires_nav ul {
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.itineraires_nav li {
+   margin: 0 15px;
+}
+
+.itineraires_nav a {
+   text-decoration: none;
+   color: #ecf0f1;
+   font-size: 1.2em;
+   font-weight: bold;
+   transition: color 0.3s ease-in-out;
+}
+
+.itineraires_nav a:hover {
+   color: #3498db;
+}
+
+/* Styles généraux pour les sections spécifiques (Coup de cœur, Activités, etc.) */
+#itineraires > section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #34495e;
+   padding: 30px;
+   border-radius: 15px;
+   margin-bottom: 30px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   min-height: 600vh;
+}
+
+/* Styles pour les titres des sections spécifiques */
+#itineraires h4 {
+   color: #e74c3c;
+   font-size: 2.5em;
+   margin-bottom: 15px;
+}
+
+/* Styles pour les listes */
+#itineraires ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#itineraires li {
+   margin-bottom: 8px;
+   font-size: 16px;
+   color: #ecf0f1;
+}
+
+/* Styles pour les activités */
+#itineraires .activite {
+   max-width: 800px;
+   margin: 0 auto 30px;
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+/* Styles pour le contenu des activités */
+#itineraires .activite h3 {
+   color: #3498db;
+   font-size: 2.5em;
+   margin-bottom: 20px;
+}
+
+#itineraires .activite p {
+   margin-bottom: 20px;
+   font-size: 16px;
+   color: #ecf0f1;
+}
+
+/* Styles pour les galeries d'images */
+#itineraires .galerie {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+#itineraires .galerie img {
+   width: 350px;
+   height: 350px; /* Ajustez la hauteur selon vos préférences */
+   object-fit: cover;
+   border-radius: 10px;
+   transition: transform 0.3s ease-in-out;
+   margin-bottom: 15px;
+}
+
+#itineraires .galerie img:hover {
+   transform: scale(1.1);
+}
+
+
+/* Styles pour les lieux Historiques */
+#itineraires .site-Historique {
+   max-width: 800px;
+   margin: 0 auto 30px;
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+/* Styles pour le contenu des lieux historiques */
+#itineraires .site-Historique h3 {
+   color: #3498db;
+   font-size: 2.5em;
+   margin-bottom: 20px;
+}
+
+#itineraires .site-Historique p {
+   margin-bottom: 20px;
+   font-size: 16px;
+   color: #ecf0f1;
+}

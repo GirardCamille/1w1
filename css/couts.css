@@ -1,0 +1,136 @@
+#couts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 120vh; /* Définissez une hauteur minimale en unités de vue */
+    font-family: 'Merriweather', serif;
+    flex-grow: 1; /* Permet à la section de prendre tout l'espace vertical disponible */
+}
+
+#couts h2 {
+    color: #e20612;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#tableau__p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.resources-rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les ressources */
+    padding-top: 30px;
+}
+
+.resources-header {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resource-column {
+    display: flex;
+    flex-direction: row; /* Utilise une direction de ligne pour afficher les colonnes */
+    justify-content: space-around;
+    width: 100%; /* Ajuste la largeur à 100% pour occuper tout l'espace disponible */
+    margin-bottom: 20px;
+}
+
+.resource-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px; /* Ajoute une marge autour des éléments pour l'espace */
+}
+
+.resource-link {
+    display: inline-block;
+    background-color: #78abda;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Ajoute un espace entre les liens */
+    width: 420px; /* Définir la largeur souhaitée */
+}
+
+.resource-link:hover {
+    background-color: #e20612;
+}
+
+.resource-description {
+    font-size: 14px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e20612;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e20612;
+}
+
+th, td {
+    border: 1px solid #e20612;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #e20612;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.table-container {
+    position: relative;
+}
+
+.legend {
+    font-style: italic;
+    color: #272727;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+tfoot {
+    background-color: #e20612;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Ajout de règles de médias queries pour la réactivité */
+@media only screen and (max-width: 768px) {
+    .resource-column {
+        flex-direction: column; /* Affiche les ressources en colonne sur un écran étroit */
+    }
+
+    .resource-link {
+        width: 100%; /* Ajuste la largeur à 100% pour occuper tout l'espace disponible */
+    }
+    #couts {
+        min-height: 170vh; 
+    }
+}

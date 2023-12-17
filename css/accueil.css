@@ -1,0 +1,65 @@
+#accueil {
+    background-color: #f7f7f7;
+    padding: 10vh 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#accueil h1 {
+    font-size: 3.5em;
+    color: #e20612;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#accueil p {
+    font-size: 1.3em;
+    color: #78abda;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Merriweather', serif;
+}
+
+#accueil__img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#accueil__img img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+#accueil__img img:hover {
+    transform: scale(1.1);
+}
+
+#accueil button {
+    background-color: #e20612;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Ajustez la largeur selon vos préférences */
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+#accueil button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#accueil button:hover {
+    background-color: #c10311;
+}
