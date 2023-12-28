@@ -1,65 +1,77 @@
+/* Styles pour la section d'inscription */
 #inscription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding: 20px;
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Direction de la colonne pour les éléments enfants */
+    align-items: center; /* Alignement des éléments au centre */
+    background-color: #f0f0f0; /* Couleur de fond */
+    padding: 20px; /* Remplissage */
 }
 
+/* Styles pour le titre h2 dans la section d'inscription */
 #inscription h2 {
-    color: #e20612;
-    margin-bottom: 10px;
-    text-align: left;
+    color: #e20612; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
+    text-align: left; /* Alignement du texte à gauche */
 }
 
+/* Styles pour le paragraphe .p__inscription dans la section d'inscription */
 .p__inscription {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-width: 500px;
-    text-align: center;
+    padding-top: 20px; /* Espacement en haut */
+    padding-bottom: 20px; /* Espacement en bas */
+    max-width: 500px; /* Largeur maximale du paragraphe */
+    text-align: center; /* Alignement du texte au centre */
+    font-family: 'Merriweather', serif; /* Police de caractères */
 }
 
+/* Styles pour le formulaire dans la section d'inscription */
 form {
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* Largeur à 100% */
+    max-width: 500px; /* Largeur maximale du formulaire */
 }
 
+/* Styles pour les libellés dans le formulaire d'inscription */
 label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #333; /* Couleur du texte pour les labels */
+    display: block; /* Affichage en bloc */
+    margin-bottom: 10px; /* Marge en bas */
+    font-weight: bold; /* Police en gras */
+    color: #333; /* Couleur du texte pour les libellés */
 }
 
+/* Styles pour les champs de saisie et les menus déroulants dans le formulaire d'inscription */
 input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+    width: 100%; /* Largeur à 100% */
+    padding: 8px; /* Remplissage */
+    margin-bottom: 15px; /* Marge en bas */
+    box-sizing: border-box; /* Modèle de boîte */
 }
 
+/* Styles pour le conteneur flexible dans le formulaire d'inscription */
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espace équitable entre les éléments enfants */
+    margin-bottom: 15px; /* Marge en bas */
 }
 
+/* Styles pour les éléments avec une largeur de 48% dans le formulaire d'inscription */
 .width-48 {
-    width: 48%;
+    width: 48%; /* Largeur de 48% */
 }
 
+/* Styles pour le bouton dans le formulaire d'inscription */
 button {
-    background-color: #78abda;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    margin-top: 10px; /* Espacement entre le formulaire et le bouton */
+    background-color: #78abda; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 12px 20px; /* Remplissage */
+    border-color: #78abda; /* Couleur de la bordure du bouton */
+    border-radius: 10px; /* Bordure arrondie */
+    text-align: center; /* Alignement du texte au centre */
+    text-decoration: none; /* Pas de soulignement du texte */
+    transition: background-color 0.3s ease; /* Animation de la couleur de fond */
+    width: 100%; /* Largeur à 100% */
+    margin-top: 10px; /* Marge en haut */
 }
 
+/* Styles pour le bouton au survol dans le formulaire d'inscription */
 button:hover {
-    background-color: #e20612;
+    background-color: #e20612; /* Couleur de fond au survol */
 }

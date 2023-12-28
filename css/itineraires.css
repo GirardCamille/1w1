@@ -1,149 +1,136 @@
-/* Section Itineraires */
+/* Styles pour la section Itineraires */
 #itineraires {
-   background-color: #2c3e50;
-   color: #ecf0f1;
-   min-height: 6000vh;
+   background-color: #2c3e50; /* Couleur de fond */
+   color: #ecf0f1; /* Couleur du texte */
+   padding: 50px 0; /* Remplissage en haut et en bas */
+   min-height: 1010vh; /* Hauteur minimale */
+   font-family: 'Merriweather', serif; /* Police de caractères */
 }
 
+/* Styles pour le titre h2 dans la section Itineraires */
 #itineraires h2 {
-   color: #3498db;
-   font-size: 3em;
-   margin-bottom: 30px;
+   color: #3498db; /* Couleur du texte */
+   font-size: 3em; /* Taille de la police */
+   margin-bottom: 30px; /* Marge en bas */
+   font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
 }
 
+/* Styles pour l'introduction dans la section Itineraires */
 .itineraires__intro {
-   max-width: 800px;
-   margin: 0 auto 30px;
-   text-align: justify;
-   line-height: 1.6;
+   max-width: 800px; /* Largeur maximale */
+   margin: 0 auto 30px; /* Marge en bas avec centrage automatique */
+   text-align: justify; /* Alignement justifié du texte */
+   line-height: 1.6; /* Hauteur de ligne */
 }
 
+/* Styles pour la navigation dans la section Itineraires */
 .itineraires_nav {
-   margin-bottom: 30px;
+   margin-bottom: 30px; /* Marge en bas */
 }
 
 .itineraires_nav ul {
-   list-style-type: none;
-   padding: 0;
-   display: flex;
-   justify-content: center;
+   list-style-type: none; /* Pas de style de liste */
+   padding: 0; /* Pas de rembourrage */
+   display: flex; /* Affichage en flexbox */
+   justify-content: center; /* Centrage horizontal */
 }
 
 .itineraires_nav li {
-   margin: 0 15px;
+   margin: 0 15px; /* Marge sur les côtés */
 }
 
 .itineraires_nav a {
-   text-decoration: none;
-   color: #ecf0f1;
-   font-size: 1.2em;
-   font-weight: bold;
-   transition: color 0.3s ease-in-out;
+   text-decoration: none; /* Pas de soulignement du texte */
+   color: #ecf0f1; /* Couleur du texte */
+   font-size: 1.2em; /* Taille de la police */
+   font-weight: bold; /* Police en gras */
+   transition: color 0.3s ease-in-out; /* Animation de la couleur du texte */
 }
 
 .itineraires_nav a:hover {
-   color: #3498db;
+   color: #3498db; /* Couleur du texte au survol */
 }
 
-/* Styles généraux pour les sections spécifiques (Coup de cœur, Activités, etc.) */
+/* Styles généraux pour les sections spécifiques (Coup de cœur, Activités, etc.) dans la section Itineraires */
 #itineraires > section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: #34495e;
-   padding: 30px;
-   border-radius: 15px;
-   margin-bottom: 30px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   min-height: 600vh;
+   background-color: #34495e; /* Couleur de fond */
+   padding: 30px; /* Remplissage */
+   border-radius: 15px; /* Bordure arrondie */
+   margin-bottom: 30px; /* Marge en bas */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+   min-height: 150vh; /* Hauteur minimale */
 }
 
-/* Styles pour les titres des sections spécifiques */
-#itineraires h4 {
-   color: #e74c3c;
-   font-size: 2.5em;
-   margin-bottom: 15px;
-}
-
-/* Styles pour les listes */
+/* Styles pour les listes dans la section Itineraires */
 #itineraires ul {
-   list-style-type: none;
-   padding: 0;
+   list-style-type: none; /* Pas de style de liste */
+   padding: 0; /* Pas de rembourrage */
 }
 
 #itineraires li {
-   margin-bottom: 8px;
-   font-size: 16px;
-   color: #ecf0f1;
+   margin-bottom: 8px; /* Marge en bas */
+   font-size: 16px; /* Taille de la police */
+   color: #ecf0f1; /* Couleur du texte */
 }
 
-/* Styles pour les activités */
-#itineraires .activite {
-   max-width: 800px;
-   margin: 0 auto 30px;
-   text-align: justify;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+#itineraires h3 {
+   color: #fbdee2; /* Couleur du texte */
+   font-size: 2.5em; /* Taille de la police */
+   margin-bottom: 20px; /* Marge en bas */
+   font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
 }
 
-
-
-/* Styles pour le contenu des activités */
-#itineraires .activite h3 {
-   color: #3498db;
-   font-size: 2.5em;
-   margin-bottom: 20px;
+.note {
+   color: red; /* Couleur rouge pour les notes */
 }
 
-#itineraires .activite p {
-   margin-bottom: 20px;
-   font-size: 16px;
-   color: #ecf0f1;
+#itineraires p {
+   margin-bottom: 20px; /* Marge en bas */
+   font-size: 16px; /* Taille de la police */
+   color: #ecf0f1; /* Couleur du texte */
 }
 
-/* Styles pour les galeries d'images */
+/* Styles pour les galeries d'images dans la section Itineraires */
 #itineraires .galerie {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+   display: flex; /* Affichage en flexbox */
+   flex-wrap: wrap; /* Envelopper les éléments sur plusieurs lignes si nécessaire */
+   justify-content: center; /* Centrage horizontal */
+   align-items: center; /* Centrage vertical */
+   max-width: 1170px; /* Largeur maximale */
+   margin: 0 auto; /* Centrage automatique de tout le conteneur de la galerie */
 }
 
 #itineraires .galerie img {
-   width: 350px;
-   height: 350px; /* Ajustez la hauteur selon vos préférences */
-   object-fit: cover;
-   border-radius: 10px;
-   transition: transform 0.3s ease-in-out;
-   margin-bottom: 15px;
+   width: 350px; /* Largeur des images */
+   height: 350px; /* Hauteur des images */
+   object-fit: cover; /* Ajuster la taille de l'objet pour couvrir */
+   border-radius: 10px; /* Bordure arrondie */
+   transition: transform 0.3s ease-in-out; /* Animation du changement d'échelle */
+   margin: 10px; /* Ajout de marges pour l'espacement */
 }
 
 #itineraires .galerie img:hover {
-   transform: scale(1.1);
+   transform: scale(1.1); /* Changement d'échelle au survol */
 }
 
-
-/* Styles pour les lieux Historiques */
-#itineraires .site-Historique {
-   max-width: 800px;
-   margin: 0 auto 30px;
-   text-align: justify;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+/* Media queries pour la réactivité dans la section Itineraires */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+   #itineraires > section{
+       min-height: 275vh; /* Hauteur minimale */
+   }
+   #itineraires{
+      min-height: 1850vh; /* Hauteur minimale */
+   }
 }
 
-
-
-/* Styles pour le contenu des lieux historiques */
-#itineraires .site-Historique h3 {
-   color: #3498db;
-   font-size: 2.5em;
-   margin-bottom: 20px;
-}
-
-#itineraires .site-Historique p {
-   margin-bottom: 20px;
-   font-size: 16px;
-   color: #ecf0f1;
+@media only screen and (max-width: 768px) { 
+   #itineraires > section{
+       min-height: 450vh; /* Hauteur minimale */
+   }
+   #itineraires{
+      min-height: 2900vh; /* Hauteur minimale */
+   }
+   .itineraires_nav a{
+      font-size: 0.8em; /* Taille de la police réduite */
+   }
 }

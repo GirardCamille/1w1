@@ -1,91 +1,103 @@
+/* Styles pour la section des coutumes */
 #coutumes {
-    background-color: #e8f0fe;
-    padding: 50px;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    min-height: 135vh;
+    background-color: #e8f0fe; /* Couleur de fond */
+    padding: 50px; /* Remplissage */
+    text-align: center; /* Alignement du texte au centre */
+    font-family: 'Merriweather', serif; /* Police de caractères */
+    min-height: 135vh; /* Hauteur minimale en unités de vue */
 }
 
+/* Styles pour le titre h2 dans la section des coutumes */
 #coutumes h2 {
-    color: #0066cc;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: left;
+    color: #0066cc; /* Couleur du texte */
+    margin-bottom: 30px; /* Marge en bas */
+    font-size: 2.5em; /* Taille de police */
+    font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
+    text-align: left; /* Alignement du texte à gauche */
 }
 
+/* Styles pour les paragraphes dans la section des coutumes */
 #coutumes p {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 30px;
-    text-align: justify;
-    line-height: 1.6;
+    color: #333; /* Couleur du texte */
+    font-size: 18px; /* Taille de police */
+    margin-bottom: 30px; /* Marge en bas */
+    text-align: justify; /* Alignement justifié du texte */
+    line-height: 1.6; /* Hauteur de ligne */
 }
 
+/* Styles pour la disposition des colonnes des coutumes */
 .coutumes-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Affichage en flexbox */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments fils */
+    justify-content: center; /* Centre les éléments horizontalement */
 }
 
+/* Styles pour chaque colonne des coutumes */
 .coutumes-columns div {
-    box-sizing: border-box;
-    width: 48%; /* Ajustez selon vos préférences */
-    margin: 0 1%; /* Espace entre les colonnes */
+    box-sizing: border-box; /* Inclut les bordures et les rembourrages dans la largeur et la hauteur */
+    width: 48%; /* Largeur de la colonne */
+    margin: 0 1%; /* Marge entre les colonnes */
 }
 
+/* Styles communs pour les colonnes À Faire et À Ne Pas Faire */
 .coutumes-columns .faire, .coutumes-columns .ne-pas-faire {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #ffffff; /* Couleur de fond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 30px; /* Remplissage interne */
+    margin-bottom: 20px; /* Marge en bas */
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Direction de colonne pour les éléments fils */
+    align-items: center; /* Centre les éléments verticalement */
 }
 
+/* Styles spécifiques pour la colonne À Faire */
 .coutumes-columns .faire {
     border-right: 2px solid #0066cc; /* Bordure à droite pour À Faire */
 }
 
+/* Styles spécifiques pour la colonne À Ne Pas Faire */
 .coutumes-columns .ne-pas-faire {
     border-left: 2px solid #0066cc; /* Bordure à gauche pour À Ne Pas Faire */
 }
 
+/* Styles pour les titres h3 des colonnes des coutumes */
 .coutumes-columns h3 {
-    color: #0066cc;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-    font-family: 'Bebas Neue', sans-serif;
+    color: #0066cc; /* Couleur du texte */
+    margin-bottom: 20px; /* Marge en bas */
+    font-size: 1.8em; /* Taille de police */
+    font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
 }
 
+/* Styles pour les listes à puces dans les colonnes des coutumes */
 .coutumes-columns ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
+    list-style-type: none; /* Pas de marqueurs de liste */
+    padding: 0; /* Aucun remplissage */
+    text-align: left; /* Alignement du texte à gauche */
 }
 
+/* Styles pour chaque élément de liste dans les colonnes des coutumes */
 .coutumes-columns li {
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #333;
+    margin-bottom: 15px; /* Marge en bas */
+    font-size: 16px; /* Taille de police */
+    color: #333; /* Couleur du texte */
 }
 
+/* Règles de média query pour la réactivité */
 @media (max-width: 1020px) {
     .coutumes-columns div {
-        width: 100%;
+        width: 100%; /* Largeur de la colonne à 100% sur un écran plus petit */
     }
     #coutumes{
-        min-height: 180vh;
+        min-height: 180vh; /* Hauteur minimale égale à 180% de la hauteur de la vue */
     }
 }
 
 @media (max-width: 850px) {
     .coutumes-columns div {
-        width: 100%;
+        width: 100%; /* Largeur de la colonne à 100% sur un écran encore plus petit */
     }
     #coutumes{
-        min-height: 270vh;
+        min-height: 275vh; /* Hauteur minimale égale à 275% de la hauteur de la vue */
     }
 }

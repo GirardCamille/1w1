@@ -1,50 +1,57 @@
+/* Style pour la section des coûts */
 #couts {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     padding: 20px;
-    min-height: 120vh; /* Définissez une hauteur minimale en unités de vue */
+    min-height: 120vh; 
     font-family: 'Merriweather', serif;
     flex-grow: 1; /* Permet à la section de prendre tout l'espace vertical disponible */
 }
 
+/* Style pour le titre h2 dans la section des coûts */
 #couts h2 {
-    color: #e20612;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 2.5em;
-    font-family: 'Bebas Neue', sans-serif;
+    color: #e20612; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 2.5em; /* Taille de police */
+    font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
 }
 
+/* Style pour le paragraphe dans la section des coûts */
 #tableau__p {
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 20px; /* Marge en bas */
+    text-align: left; /* Alignement du texte à gauche */
 }
 
+/* Style pour la section des ressources */
 .resources-rectangle {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre les ressources */
-    padding-top: 30px;
+    padding-top: 30px; /* Remplissage en haut */
 }
 
+/* Style pour l'en-tête des ressources */
 .resources-header {
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 18px; /* Taille de police */
+    font-weight: bold; /* Poids de la police (gras) */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
 }
 
+/* Style pour la colonne des ressources */
 .resource-column {
     display: flex;
     flex-direction: row; /* Utilise une direction de ligne pour afficher les colonnes */
-    justify-content: space-around;
+    justify-content: space-around; /* Répartition équitable de l'espace autour des éléments */
     width: 100%; /* Ajuste la largeur à 100% pour occuper tout l'espace disponible */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Marge en bas */
 }
 
+/* Style pour chaque élément de ressource */
 .resource-item {
     display: flex;
     flex-direction: column;
@@ -52,73 +59,84 @@
     margin: 0 10px; /* Ajoute une marge autour des éléments pour l'espace */
 }
 
+/* Style pour le lien de ressource */
 .resource-link {
     display: inline-block;
-    background-color: #78abda;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px; /* Ajoute un espace entre les liens */
+    background-color: #78abda; /* Couleur de fond du lien */
+    color: #fff; /* Couleur du texte du lien */
+    padding: 12px 20px; /* Remplissage du lien */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Alignement du texte au centre */
+    text-decoration: none; /* Pas de soulignement du texte du lien */
+    transition: background-color 0.3s ease; /* Effet de transition de couleur au survol */
+    margin-bottom: 10px; /* Marge en bas */
     width: 420px; /* Définir la largeur souhaitée */
 }
 
+/* Effet au survol du lien de ressource */
 .resource-link:hover {
-    background-color: #e20612;
+    background-color: #e20612; /* Changement de couleur de fond au survol */
 }
 
+/* Style pour la description de la ressource */
 .resource-description {
-    font-size: 14px;
-    color: #555;
+    font-size: 14px; /* Taille de police */
+    color: #555; /* Couleur du texte */
 }
 
+/* Style pour le tableau */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #e20612;
-    margin-top: 20px;
+    width: 100%; /* Largeur du tableau à 100% */
+    border-collapse: collapse; /* Fusion des bordures de cellules */
+    border: 2px solid #e20612; /* Bordure du tableau */
+    margin-top: 20px; /* Marge en haut */
 }
 
+/* Style pour la légende du tableau */
 caption {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #e20612;
+    font-size: 1.2em; /* Taille de police */
+    font-weight: bold; /* Poids de la police (gras) */
+    margin-bottom: 10px; /* Marge en bas */
+    color: #e20612; /* Couleur du texte */
 }
 
+/* Style pour les cellules d'en-tête et de données du tableau */
 th, td {
-    border: 1px solid #e20612;
-    padding: 10px;
-    text-align: center;
+    border: 1px solid #e20612; /* Bordure des cellules */
+    padding: 10px; /* Remplissage des cellules */
+    text-align: center; /* Alignement du texte au centre */
 }
 
+/* Style pour l'en-tête du tableau */
 thead {
-    background-color: #e20612;
-    color: #fff;
+    background-color: #e20612; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte de l'en-tête */
 }
 
+/* Style pour les lignes paires du corps du tableau */
 tbody tr:nth-child(even) {
-    background-color: #fff;
+    background-color: #fff; /* Couleur de fond des lignes paires */
 }
 
+/* Style pour le conteneur du tableau */
 .table-container {
-    position: relative;
+    position: relative; /* Position relative pour le positionnement des éléments enfants */
 }
 
+/* Style pour la légende */
 .legend {
-    font-style: italic;
-    color: #272727;
-    font-size: 12px;
-    margin-bottom: 10px;
-    text-align: center;
+    font-style: italic; /* Style d'italique */
+    color: #272727; /* Couleur du texte */
+    font-size: 12px; /* Taille de police */
+    margin-bottom: 10px; /* Marge en bas */
+    text-align: center; /* Alignement du texte au centre */
 }
 
+/* Style pour le pied du tableau */
 tfoot {
-    background-color: #e20612;
-    color: #fff;
-    font-weight: bold;
+    background-color: #e20612; /* Couleur de fond du pied du tableau */
+    color: #fff; /* Couleur du texte du pied du tableau */
+    font-weight: bold; /* Poids de la police (gras) */
 }
 
 /* Ajout de règles de médias queries pour la réactivité */
@@ -130,7 +148,8 @@ tfoot {
     .resource-link {
         width: 100%; /* Ajuste la largeur à 100% pour occuper tout l'espace disponible */
     }
+
     #couts {
-        min-height: 170vh; 
+        min-height: 170vh; /* Hauteur minimale égale à 170% de la hauteur de la vue */
     }
 }

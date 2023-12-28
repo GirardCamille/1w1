@@ -1,0 +1,77 @@
+/* Styles pour la section vidéo */
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    background-color: #e8f0fe;
+    padding: 20px;
+    min-height: 150vh;
+    font-family: 'Merriweather', serif;
+    flex-grow: 1;
+}
+
+/* Styles pour le titre de la section vidéo */
+#video h2 {
+    color: #e20612;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Styles pour les paragraphes dans la section vidéo */
+#video p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styles pour le conteneur des vidéos */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    margin-top: 40px;
+}
+
+/* Styles pour le conteneur de chaque vidéo */
+.video-container {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: #e20612 solid 4px;
+}
+
+/* Styles pour les vidéos intégrées (iframe) */
+iframe {
+    width: 100%;
+    min-height: 400px;
+    min-width: 400px;
+}
+
+/* Styles supplémentaires pour la réactivité */
+@media only screen and (max-width: 1200px) {
+    .videos-container {
+        align-items: center; /* Centre les éléments horizontalement sur les écrans plus petits */
+    }
+
+    #video {
+        min-height: 200vh;
+    }
+}
+
+/* Styles supplémentaires pour la réactivité sur des écrans encore plus petits */
+@media only screen and (max-width: 768px) {
+    .videos-container {
+        align-items: center; /* Centre les éléments horizontalement sur les écrans plus petits */
+    }
+
+    .video-container {
+        flex: 0 0 100%;
+    }
+
+    #video {
+        min-height: 275vh;
+    }
+}

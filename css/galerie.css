@@ -1,0 +1,85 @@
+/* Styles pour la section de la galerie */
+#galerie {
+    text-align: center; /* Alignement du texte au centre */
+    background-color: #e8f0fe; /* Couleur de fond */
+    padding: 20px; /* Remplissage */
+    min-height: 150vh; /* Hauteur minimale en unités de vue */
+    font-family: 'Merriweather', serif; /* Police de caractères */
+    flex-grow: 1; /* Permet à la section de prendre tout l'espace vertical disponible */
+}
+
+/* Styles pour le titre h2 dans la section de la galerie */
+#galerie h2 {
+    padding-top: 50px; /* Espacement en haut du titre */
+    color: #e20612; /* Couleur du texte */
+    margin-bottom: 10px; /* Marge en bas */
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 2.5em; /* Taille de police */
+    font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
+}
+
+/* Styles pour les paragraphes dans la section de la galerie */
+#galerie p {
+    margin-bottom: 20px; /* Marge en bas */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Styles pour le conteneur des images dans la section de la galerie */
+.image-container {
+    display: grid; /* Affichage en grille */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Colonnes de largeur minimale 200px, avec un maximum de 1 fraction de l'espace disponible */
+    gap: 15px; /* Espacement entre les images */
+}
+
+/* Styles pour chaque conteneur d'image dans la section de la galerie */
+.image-wrapper {
+    position: relative; /* Position relative pour le positionnement absolu de la légende */
+    overflow: hidden; /* Masquer tout contenu débordant */
+    border-radius: 10px; /* Bordure arrondie */
+}
+
+/* Styles pour les images dans la section de la galerie */
+.image-wrapper img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    height: 100%; /* Hauteur de l'image à 100% du conteneur */
+    object-fit: cover; /* Ajustement de l'image pour couvrir le conteneur */
+    object-position: center; /* Position de l'image au centre */
+    transition: transform 0.3s ease-in-out; /* Animation de transformation */
+}
+
+/* Styles pour les images au survol dans la section de la galerie */
+.image-wrapper:hover img {
+    transform: scale(1.1); /* Agrandir l'image au survol */
+}
+
+/* Styles pour les légendes dans la section de la galerie */
+.caption {
+    position: absolute; /* Position absolue par rapport au conteneur */
+    bottom: 0; /* Alignement en bas du conteneur */
+    left: 0; /* Alignement à gauche du conteneur */
+    width: 100%; /* Largeur à 100% du conteneur */
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Remplissage */
+    border-radius: 0 0 10px 10px; /* Bordure arrondie uniquement en bas */
+    opacity: 0; /* Opacité initiale à 0 */
+    transition: opacity 0.3s ease-in-out; /* Animation d'opacité */
+}
+
+/* Styles pour les légendes au survol dans la section de la galerie */
+.image-wrapper:hover .caption {
+    opacity: 1; /* Afficher la légende au survol */
+}
+
+/* Règles de media query pour la réactivité */
+@media only screen and (max-width: 768px) {
+    #galerie {
+        min-height: 350vh; /* Hauteur minimale ajustée pour les écrans étroits */
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    #galerie {
+        min-height: 300vh; /* Hauteur minimale ajustée pour les écrans de taille moyenne */
+    }
+}

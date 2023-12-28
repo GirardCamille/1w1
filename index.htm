@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-GL4PfiTtBqFo94cyPh9XsA6Zj/YZrrZjSfKt3T5rZ5Hg6XcFkFXG5g2m6yshL1Lf2pDlCw3DeW6tmkrrm6JNXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Merriweather:wght@300&family=Open+Sans&family=Roboto&family=Vina+Sans&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/accueil.css">
+<link rel="stylesheet" href="css/couts.css">
+<link rel="stylesheet" href="css/coutumes.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/galerie.css">
+<link rel="stylesheet" href="css/inscription.css">
+<link rel="stylesheet" href="css/itineraires.css">
+<link rel="stylesheet" href="css/video.css">
+<title>TP2-Camille Girard</title>
 </head>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Merriweather:wght@300&family=Open+Sans&family=Roboto&family=Vina+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/accueil.css">
-    <link rel="stylesheet" href="css/couts.css">
-    <link rel="stylesheet" href="css/coutumes.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/galerie.css">
-    <link rel="stylesheet" href="css/inscription.css">
-    <link rel="stylesheet" href="css/itineraires.css">
-    <link rel="stylesheet" href="css/video.css">
-    <title>TP2-Camille Girard</title>
-</head>
+
 <body>
 
 
 
 
-
+    <!-- En-tête de la page -->
     <header id="hautDePage">
+        <!-- Logo de l'en-tête -->
         <img id="hautDePage__logo" src="images/logo_1.png" alt="logo">
+        
+        <!-- Navigation de l'en-tête -->
         <nav id="hautDePage__nav">
             <a href="#accueil">Accueil</a>
             <a href="#coutumes">Coutumes</a>
-              <a href="#itineraires">Itinéraires</a>
+            <a href="#itineraires">Itinéraires</a>
             <a href="#couts">Coûts</a>
             <a href="#galerie">Galerie</a>
             <a href="#video">Vidéo</a>
             <a href="#inscription">Inscription</a>
         </nav>
+
+        <!-- Zone de recherche de l'en-tête -->
         <div id="hautDePage__search">
             <div class="search-container">
-            <input type="text" placeholder="Rechercher...">
-            <span id="search-icon">&#127800;</span>
+
+                <!-- Champ de recherche -->
+                <input type="text" placeholder="Rechercher...">
+                <!-- Icône de recherche -->
+                <span id="search-icon">&#127800;</span>
             </div>
         </div>
     </header>
-    
 
 
 
@@ -53,24 +64,117 @@
 
 
 
+    <!-- Section d'accueil -->
     <section id="accueil">
+
+        <!-- Titre principal -->
         <h1>Bienvenue dans Mon Carnet de Voyage Japonais !</h1>
+        
+        <!-- Introduction -->
         <p>
-            Préparez-vous à un périple unique à travers le Japon. 
-            Découvrez des trésors cachés, explorez des villes animées, 
-            et plongez dans la culture fascinante. Chaque image, chaque 
+            Préparez-vous à un périple unique à travers le Japon.
+            Découvrez des trésors cachés, explorez des villes animées,
+            et plongez dans la culture fascinante. Chaque image, chaque
             récit est une invitation à l'évasion.
         </p>
+
+        <!-- Images d'illustration -->
         <div id="accueil__img">
-        <img src="images/photo_2Accueil.jpg" alt="paysage" >
-        <img src="images/photo_1Accueil.jpg" alt="groupe" >
-        <img src="images/photo_3Accueil.jpg" alt="paysage" >
+            <img src="images/photo_2Accueil.jpg" alt="paysage">
+            <img src="images/photo_1Accueil.jpg" alt="groupe">
+            <img src="images/photo_3Accueil.jpg" alt="paysage">
         </div>
+
+        <!-- Paragraphe suivant l'introduction -->
         <p>
-            Cliquez ci-dessous et plongez dans mon voyage. 
+            Cliquez ci-dessous et plongez dans mon voyage.
             Laissez-vous emporter par l'aventure captivante du Japon.
         </p>
-        <button><a href="#itineraires">Explorer Maintenant</a></button>
+
+        <!-- Bouton avec un lien vers la section "Itinéraires" -->
+        <button onclick="location.href='#itineraires'">Explorer</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Section sur les coutumes japonaises -->
+    <section id="coutumes">
+
+        <!-- Article sur les coutumes japonaises -->
+        <article>
+
+            <!-- Titre de l'article -->
+            <h2>Découvrir les Coutumes Japonaises</h2>
+            
+            <!-- Introduction de l'article -->
+            <p>
+                Lors de votre séjour au Japon, il est essentiel de comprendre et de respecter les coutumes locales
+                pour vivre une expérience authentique et harmonieuse. Les Japonais accordent une grande importance à
+                leurs traditions, et en tant que visiteur, adopter ces coutumes témoigne de votre respect envers leur
+                culture unique.
+            </p>
+
+            <!-- Paragraphe sur l'importance des coutumes -->
+            <p>
+                <strong>L'Importance des Coutumes</strong>
+                <br>
+                Renforcer les Liens Culturels : En adoptant les coutumes japonaises, vous ouvrez des portes à des
+                interactions plus positives avec les habitants. Les Japonais apprécient souvent les efforts des
+                étrangers pour s'adapter à leur mode de vie, créant ainsi des liens interculturels plus étroits.
+                <br>
+                Signe de Considération : Respecter les coutumes est un signe de considération envers la société
+                japonaise. Cela montre que vous êtes conscient de la culture locale et que vous cherchez à vous
+                intégrer de manière respectueuse.
+            </p>
+
+            <!-- Divisions en colonnes pour les coutumes -->
+            <div class="coutumes-columns">
+
+                <!-- Section "À Faire" -->
+                <div class="faire">
+                    <h3>À Faire</h3>
+                    <ul>
+                        <li>Utiliser des baguettes de manière appropriée.</li>
+                        <li>Se couvrir la bouche en cas de toux ou d'éternuement en public.</li>
+                        <li>Dire "Arigato gozaimasu" (merci) pour exprimer sa gratitude.</li>
+                        <li>Utilisez des gestes polis comme l'inclinaison lors des salutations.</li>
+                        <li>Respectez les files d'attente avec patience, une pratique courante dans les transports en
+                            commun.</li>
+                        <li>Explorez la cuisine japonaise variée et authentique.</li>
+                        <li>Pratiquez le tri des déchets en suivant les indications spécifiques de recyclage.</li>
+                    </ul>
+                </div>
+
+                <!-- Section "À Ne Pas Faire" -->
+                <div class="ne-pas-faire">
+                    <h3>À Ne Pas Faire</h3>
+                    <ul>
+                        <li>Évitez de parler fort en public pour maintenir une atmosphère de respect.</li>
+                        <li>Ne pointez pas du doigt, car cela est considéré comme impoli.</li>
+                        <li>Évitez de montrer des signes d'affection en public pour respecter la discrétion culturelle.
+                        </li>
+                        <li>N'entrez pas dans les maisons avec des chaussures.</li>
+                        <li>Ne laissez pas de pourboire, car cela peut être mal interprété comme de la générosité
+                            excessive.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusion de l'article -->
+            <p>
+                En intégrant ces pratiques dans votre quotidien, vous enrichirez votre expérience de voyage au Japon et
+                contribuerez à des échanges culturels respectueux.
+            </p>
+        </article>
     </section>
 
 
@@ -85,421 +189,463 @@
 
 
 
-    <section id="coutumes">
-      <article>
-          <h2>Découvrir les Coutumes Japonaises</h2>
-          <p>
-              Lors de votre séjour au Japon, il est essentiel de comprendre et de respecter les coutumes locales
-              pour vivre une expérience authentique et harmonieuse. Les Japonais accordent une grande importance à
-              leurs traditions, et en tant que visiteur, adopter ces coutumes témoigne de votre respect envers leur
-              culture unique.
-          </p>
-          <p>
-              <strong>L'Importance des Coutumes</strong>
-              <br>
-              Renforcer les Liens Culturels : En adoptant les coutumes japonaises, vous ouvrez des portes à des
-              interactions plus positives avec les habitants. Les Japonais apprécient souvent les efforts des
-              étrangers pour s'adapter à leur mode de vie, créant ainsi des liens interculturels plus étroits.
-              <br>
-              Signe de Considération : Respecter les coutumes est un signe de considération envers la société
-              japonaise. Cela montre que vous êtes conscient de la culture locale et que vous cherchez à vous
-              intégrer de manière respectueuse.
-          </p>
-          <div class="coutumes-columns">
-              <div class="faire">
-                  <h3>À Faire</h3>
-                  <ul>
-                      <li>Participez à une cérémonie de thé pour découvrir l'élégance de cette tradition.</li>
-                      <li>Utilisez des gestes polis comme l'inclinaison lors des salutations.</li>
-                      <li>Respectez les files d'attente avec patience, une pratique courante dans les transports en
-                          commun.</li>
-                      <li>Explorez la cuisine japonaise variée et authentique.</li>
-                      <li>Pratiquez le tri des déchets en suivant les indications spécifiques de recyclage.</li>
-                  </ul>
-              </div>
-              <div class="ne-pas-faire">
-                  <h3>À Ne Pas Faire</h3>
-                  <ul>
-                      <li>Évitez de parler fort en public pour maintenir une atmosphère de respect.</li>
-                      <li>Ne pointez pas du doigt, car cela est considéré comme impoli.</li>
-                      <li>Évitez de montrer des signes d'affection en public pour respecter la discrétion culturelle.</li>
-                      <li>N'entrez pas dans les maisons avec des chaussures.</li>
-                      <li>Ne laissez pas de pourboire, car cela peut être mal interprété comme de la générosité excessive.</li>
-                  </ul>
-              </div>
-          </div>
-          <p>
-              En intégrant ces pratiques dans votre quotidien, vous enrichirez votre expérience de voyage au Japon et
-              contribuerez à des échanges culturels respectueux.
-          </p>
-      </article>
-  </section>
+
+
+    <!-- Section pour les itinéraires -->
+    <section id="itineraires">
+
+        <!-- Titre de la section -->
+        <h2>Découvrez notre Aventure Japonaise</h2>
+
+        <!-- Introduction de l'article "Itinéraires" -->
+        <article class="itineraires__intro">
+            <p>
+                Plongez dans les méandres de mon voyage, débuté le 31 mai à partir de l'aéroport YUL pour atteindre
+                Tokyo le 1er juin en soirée.
+                Explorez avec moi 11 jours à Osaka, à la découverte de joyaux tels que Nara, Kyoto, Himeji et Hiroshima,
+                avant de revenir à Tokyo
+                pour les 11 derniers jours, clôturant ainsi une expérience harmonieuse mêlant l'effervescence des
+                grandes villes aux trésors
+                historiques et aux merveilles naturelles.
+            </p>
+
+            <!-- Article sur "L'Importance d'un Itinéraire Bien Organisé" -->
+            <p>
+                L'organisation méticuleuse de notre itinéraire a été la clé de notre succès, nous plongeant au cœur de
+                chaque ville.
+                Que vous soyez passionné d'histoire, amateur de délices culinaires locaux, ou en quête d'expériences
+                authentiques, mon itinéraire
+                offre une perspective complète et enrichissante du Japon.
+            </p>
+        </article>
+
+        <!-- L'Importance d'un Itinéraire Bien Organisé -->
+        <article class="itineraires__description">
+            <h3>Une Aventure Inoubliable : l'Art de l'Itinéraire</h3>
+            <p>
+                Au fil de nos 22 jours d'exploration au Japon, l'élaboration réfléchie de notre itinéraire s'est révélée
+                être l'élément clé
+                pour une immersion totale dans chaque destination. La planification méticuleuse a façonné notre
+                expérience, enrichissant
+                chaque instant de notre périple.
+            </p>
+            <p>
+                En consacrant 11 jours à Osaka et 11 jours à Tokyo, nous avons étendu nos horizons grâce au JR Rail
+                Pass, une solution
+                ingénieuse pour se déplacer rapidement et efficacement à travers le Japon.
+            </p>
+        </article>
+
+        <!-- Navigation pour les différentes villes -->
+        <nav class="itineraires_nav">
+            <ul>
+                <li><a href="#tokyo">Tokyo</a></li>
+                <li><a href="#osaka">Osaka</a></li>
+                <li><a href="#nara">Nara</a></li>
+                <li><a href="#kyoto">Kyoto</a></li>
+                <li><a href="#hiroshima">Hiroshima</a></li>
+                <li><a href="#himeji">Himeji</a></li>
+            </ul>
+        </nav>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="itineraires">
-    <h2>Itinéraires</h2>
-
-     <!-- Introduction générale à l'itinéraire -->
-     <article class="itineraires__intro">
-      <p>
-          Découvrez le Japon à travers nos itinéraires bien planifiés, résultat de 22 jours d'exploration dans ce
-          magnifique pays. La richesse culturelle, les paysages variés et les expériences uniques ont été au cœur
-          de notre aventure.
-      </p>
-      <p>
-          Organiser un itinéraire a été la clé de notre réussite, permettant une immersion totale dans chaque
-          ville. Que vous soyez passionné d'histoire, amateur de cuisine locale ou en quête d'activités
-          authentiques, nos itinéraires offrent une perspective complète du Japon.
-      </p>
-  </article>
-
-  
-  <!-- Description de l'importance de l'itinéraire -->
-  <article class="itineraires__description">
-      <h3>Organiser un Itinéraire</h3>
-      <p>
-          Lors d'un voyage étendu au Japon, la planification d'un itinéraire bien pensé est essentielle pour
-          maximiser votre expérience. En ayant voyagé 22 jours au Japon, nous avons découvert qu'organiser notre
-          séjour nous a permis de profiter pleinement de chaque destination.
-      </p>
-      <p>
-          Avec 11 jours à Osaka et 11 jours à Tokyo, nous avons pu explorer d'autres villes grâce au JR Rail Pass,
-          une solution pratique pour se déplacer rapidement et efficacement à travers le Japon.
-      </p>
-  </article>
-
-  <!-- Navigation -->
-  <nav class="itineraires_nav">
-    <ul>
-        <li><a href="#tokyo">Tokyo</a></li>
-        <li><a href="#osaka">Osaka</a></li>
-        <li><a href="#nara">Nara</a></li>
-        <li><a href="#kyoto">Kyoto</a></li>
-        <li><a href="#hiroshima">Hiroshima</a></li>
-        <li><a href="#himeji">Himeji</a></li>
-    </ul>
-</nav>
 
         <!-- Sections pour chaque ville -->
 
 
+        <!-- Section Tokyo -->
+        <section id="tokyo" class="itineraires__ville">
+            <h2>Tokyo</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&#9825;</span><span>&#9825;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 10 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3>Coup de Cœur : Harry Potter Studio</h3>
+                <p>
+                    En tant que grande fan d'Harry Potter, le Studio dédié à la saga à Tokyo a été bien plus qu'une
+                    simple visite
+                    touristique – c'était une plongée profonde dans mes rêves d'enfant. Marcher à travers les décors
+                    authentiques
+                    des films, toucher des artefacts qui semblaient tout droit sortis de Poudlard, et ressentir
+                    l'énergie magique qui
+                    imprègne chaque recoin du studio ont fait de cette expérience un moment inoubliable.
+                </p>
+                <div class="galerie">
+                    <img src="images/tokyo/tokyo_CDC2.jpg" alt="Image 1">
+                    <img src="images/tokyo/tokyo_CDC1.jpg" alt="Image 2">
+                    <img src="images/tokyo/tokyo_CDC3.jpg" alt="Image 3">
+                    <img src="images/tokyo/hp4.jpg" alt="image 4">
+                    <img src="images/tokyo/hp5.jpg" alt="image 5">
+                    <img src="images/tokyo/hp6.jpg" alt="image 6">
+                </div>
+            </article>
+        </section>
 
 
-        <section id="tokyo">
-        <h3>Tokyo</h3>
-    
-        <!-- Note d'appréciation -->
-        <div class="note">
-            <span>&#9825;</span><span>&#9825;</span><span>&#9825;</span><span>&#9825;</span><span class="coeur__moitie">&#9825;</span>
+
+
+
+
+
+        <section id="osaka" class="itineraires__ville">
+            <h2>Osaka</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&#9825;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 10 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3>Coup de Cœur : Dotonbori</h3>
+                <p>
+                    Dotonbori, le cœur palpitant d'Osaka, a été l'apogée de mon séjour. Cette joyeuse et électrique
+                    zone de divertissement regorge de néons éblouissants, d'enseignes emblématiques, et d'une
+                    atmosphère vibrante qui capture l'essence même de la vie nocturne osakanaise.
+                </p>
+                <div class="galerie">
+                    <img src="images/osaka/IMG_7020.jpg" alt="Image 3">
+                    <img src="images/osaka/IMG_7481.jpg" alt="Image 1">
+                    <img src="images/osaka/IMG_6979.jpg" alt="Image 2">
+                    <img src="images/osaka/IMG_6973.jpg" alt="Image 1">
+                    <img src="images/osaka/IMG_7707.jpg" alt="image 5">
+                    <img src="images/osaka/IMG_8845.jpg" alt="imgae 6">
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
+        <section id="nara" class="itineraires__ville">
+            <h2>Nara</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&#9825;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 1 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3> Coup de Cœur : Todai-ji Temple et les Cerfs</h3>
+                <p>
+                    Le Todai-ji Temple à Nara a captivé mon cœur avec sa majesté et son histoire ancienne. C'est ici que
+                    j'ai vécu une expérience extraordinaire en compagnie des cerfs sika qui errent librement dans les
+                    environs.
+                </p>
+                <p>
+                    En approchant du temple, j'ai été accueilli par ces gracieux cerfs qui semblent être des gardiens
+                    spirituels du lieu. L'interaction avec eux a été mémorable, notamment la possibilité de leur faire
+                    une révérence (bow) en échange de biscuits spéciaux appelés "shika senbei".
+                </p>
+                <div class="galerie">
+                    <img src="images/Nara/groupe1.jpg" alt="image 1">
+                    <img src="images/Nara/deer1.jpg" alt="image 2">
+                    <img src="images/Nara/temple1.jpg" alt="image 3">
+                    <img src="images/Nara/deer2.jpg" alt="image 4">
+                    <img src="images/Nara/temple2.jpg" alt="image 5">
+                    <img src="images/Nara/deer3.jpg" alt="image 6">
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        <section id="kyoto" class="itineraires__ville">
+            <h2>Kyoto</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 3 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3>Coup de Cœur : Le Temple en Or (Kinkaku-ji) et Les Singes du Monkey Park</h3>
+                <p>
+                    Kyoto m'a enchanté avec la splendeur du Kinkaku-ji, le Temple en Or, dont les reflets dorés dans l'eau
+                    ont créé une image inoubliable. L'atmosphère paisible du jardin environnant a ajouté à la magie de cet
+                    endroit sacré.
+                </p>
+                <p>
+                    Une autre aventure unique à Kyoto a été la visite du Monkey Park Iwatayama, où j'ai pu observer de
+                    près des singes en liberté, évoluant naturellement dans leur habitat. L'ascension vers le sommet du
+                    parc offre une vue panoramique magnifique de Kyoto.
+                </p>
+                <div class="galerie">
+                    <img src="images/Kyoto/temple1.jpg" alt="1">
+                    <img src="images/Kyoto/jardin3.jpg" alt="3">
+                    <img src="images/Kyoto/temple2.jpg" alt="5">
+                    <img src="images/Kyoto/singe2.jpg" alt="6">
+                    <img src="images/Kyoto/singe4.jpg" alt="9">
+                    <img src="images/Kyoto/singe3.jpg" alt="8">
+                    
+                </div>
+            </article>
+        </section>
+
+
+
+
+        <section id="hiroshima" class="itineraires__ville">
+            <h2>Hiroshima</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&#9825;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 1 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3>Coup de Cœur : Itsukushima Jinja et le Parc du Musée de la Paix</h3>
+                <p>
+                    Mon séjour à Hiroshima a été marqué par la beauté sereine de l'Itsukushima Jinja, le sanctuaire
+                    flottant sur l'île de Miyajima. Les portails torii rouges émergent de l'eau à marée haute,
+                    créant une scène emblématique et magique.
+                </p>
+                <p>
+                    D'autre part, la visite du Parc du Musée de la Paix à Hiroshima a été une expérience profondément
+                    touchante. Marcher parmi les monuments et les ruines rappelle l'importance de la paix et de la
+                    compréhension mutuelle. Le musée offre une perspective poignante sur les événements tragiques
+                    d'Hiroshima pendant la Seconde Guerre mondiale.
+                </p>
+                <div class="galerie">
+                    <img src="images/Hiroshima/temple2.jpg" alt="1">
+                    <img src="images/Hiroshima/temple1.jpg" alt="2">
+                    <img src="images/Hiroshima/temple3.jpg" alt="3">
+                    <img src="images/Hiroshima/musee2.jpg" alt="4">
+                    <img src="images/Hiroshima/musee1.jpg" alt="5">
+                    <img src="images/Hiroshima/musee3.jpg" alt="6">
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
+        <section id="himeji" class="itineraires__ville">
+            <h2>Himeji</h2>
+
+            <!-- Note d'appréciation -->
+            <div class="note">
+                <span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&#9825;</span><span>&#9825;</span>
+            </div>
+
+            <!-- Nombre de jours -->
+            <p><strong>Nombre de jours :</strong> 1 jours</p>
+
+            <!-- Coup de cœur -->
+            <article class="highlight">
+                <h3>Coup de Cœur : Himeji Castle </h3>
+                <p>
+                    La visite du majestueux Himeji Castle a été un moment inoubliable, plongeant dans l'histoire à
+                    travers ses tours imposantes et ses jardins pittoresques. La vue panoramique depuis le sommet du
+                    château était à couper le souffle.
+                </p>
+                <div class="galerie">
+                    <img src="images/Himeji/chateau1.jpg" alt="1">
+                    <img src="images/Himeji/chateau2.jpg" alt="2">
+                    <img src="images/Himeji/chateau3.jpg" alt="3">
+                    <img src="images/Himeji/chateau4.jpg" alt="4">
+                    <img src="images/Himeji/chateau5.jpg" alt="5">
+                    <img src="images/Himeji/chateau6.jpg" alt="6">
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Section pour les coûts -->
+    <section id="couts">
+
+        <!-- Contenu de la section -->
+        <div class="content">
+
+            <!-- Titre de la section -->
+            <h2 id="tableau__h2">Coûts</h2>
+
+            <!-- Contenu de la section -->
+            <div class="section-content">
+                <p id="tableau__p">
+                    L'anticipation d'un voyage au Japon de 22 jours nécessite
+                    une planification méticuleuse, notamment sur le plan financier.
+                    Pour vous offrir une vision détaillée de la répartition des dépenses,
+                    le tableau ci-dessous présente un breakdown du budget, segmenté par
+                    catégories telles que l'hébergement, le transport, les repas, les activités,
+                    et autres. Ces estimations en dollars canadiens (CAD) couvrent chaque semaine
+                    du séjour et sont conçues pour vous offrir un guide financier précis, vous
+                    permettant ainsi de maximiser votre expérience tout en restant dans les limites
+                    budgétaires établies. Cette approche proactive contribuera à transformer votre
+                    voyage en une aventure inoubliable, en évitant les pièges financiers potentiels
+                    et en favorisant une exploration sereine et bien planifiée.
+                </p>
+
+            </div>
+
+            <!-- Conteneur du tableau -->
+            <div class="table-container">
+                <table>
+
+                    <!-- Titre du tableau -->
+                    <caption>Budget Voyage au Japon (22 jours)</caption>
+                    
+                    <!-- En-tête du tableau -->
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Semaine 1</th>
+                            <th>Semaine 2</th>
+                            <th>Semaine 3</th>
+                            <th>Coûts estimé (en CAD)</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Corps du tableau avec les données -->
+                    <tbody>
+                        <tr>
+                            <td>Hébergement</td>
+                            <td>200$</td>
+                            <td>280$</td>
+                            <td>450$</td>
+                            <td>930$</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>240$</td>
+                            <td>240$</td>
+                            <td>320$</td>
+                            <td>800$</td>
+                        </tr>
+                        <tr>
+                            <td>Repas</td>
+                            <td>250$</td>
+                            <td>250$</td>
+                            <td>325$</td>
+                            <td>825$</td>
+                        </tr>
+                        <tr>
+                            <td>Activités</td>
+                            <td>80$</td>
+                            <td>120$</td>
+                            <td>200$</td>
+                            <td>400$</td>
+                        </tr>
+                        <tr>
+                            <td>Wi-fi</td>
+                            <td>10$</td>
+                            <td>10$</td>
+                            <td>15$</td>
+                            <td>35$</td>
+                        </tr>
+                        <tr>
+                            <td>Assurance</td>
+                            <td>50$</td>
+                            <td>50$</td>
+                            <td>50$</td>
+                            <td>150$</td>
+                        </tr>
+                        <tr>
+                            <td>Billet D'avion</td>
+                            <td colspan="3"></td>
+                            <td>1600$</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Pied du tableau avec le total -->
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td colspan="3"></td>
+                            <td>4740$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- Légende du tableau -->
+                <p class="legend">* Le total ne comprend pas les achats personnels.</p>
+            </div>
+
+
+            <!-- Rectangle de ressources -->
+            <div class="resources-rectangle">
+                <p class="resources-header">Ressources pour bien budgeter un voyage :</p>
+                
+                <!-- Colonnes de ressources -->
+                <div class="resource-column">
+
+                    <!-- Ressource 1 -->
+                    <div class="resource-item">
+                        <a href="https://budgetyourtrip.com/" class="resource-link" target="_blank">BudgetYourTrip</a>
+                        <p class="resource-description">Estimez les coûts de voyage dans le monde entier.</p>
+                    </div>
+
+                    <!-- Ressource 2 -->
+                    <div class="resource-item">
+                        <a href="https://trabeepocket.com/" class="resource-link" target="_blank">Trabee Pocket</a>
+                        <p class="resource-description">Application mobile pour suivre vos dépenses de voyage.</p>
+                    </div>
+                </div>
+
+                <!-- Deuxième colonne de ressources -->
+                <div class="resource-column">
+
+                    <!-- Ressource 3 -->
+                    <div class="resource-item">
+                        <a href="https://www.voyagesarabais.com/" class="resource-link" target="_blank">Voyages à
+                            Rabais</a>
+                        <p class="resource-description">Offres et astuces pour économiser sur les voyages.</p>
+                    </div>
+
+                    <!-- Ressource 4 -->
+                    <div class="resource-item">
+                        <a href="https://voyageons-autrement.com/" class="resource-link" target="_blank">Voyageons
+                            Autrement</a>
+                        <p class="resource-description">Conseils pour voyager de manière responsable et écologique.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <!-- Nombre de jours -->
-        <p><strong>Nombre de jours :</strong> 0 jours</p>
-    
-        <!-- Coup de cœur -->
-        <article class="highlight">
-            <h4>Coup de Cœur : Harry Potter Studio</h4>
-            <p>
-            En tant que grande fan d'Harry Potter, le Studio dédié à la saga à Tokyo a été bien plus qu'une simple visite
-            touristique – c'était une plongée profonde dans mes rêves d'enfant. Marcher à travers les décors authentiques
-            des films, toucher des artefacts qui semblaient tout droit sortis de Poudlard, et ressentir l'énergie magique qui
-            imprègne chaque recoin du studio ont fait de cette expérience un moment inoubliable.
-            </p>
-            <div class="galerie">
-            <img src="images/tokyo/tokyo_CDC2.jpg" alt="Image 1">
-            <img src="images/tokyo/tokyo_CDC1.jpg" alt="Image 2">
-            <img src="images/tokyo/tokyo_CDC3.jpg" alt="Image 3">
-            </div>
-        </article>
-        
-        <!-- Activités -->
-        <article class="activite">
-            <h2>Activitées</h2>
-            <!-- Tokyo Disney World -->
-            <h3> Tokyo Disney World</h3>
-            <p>
-                Embarquez pour un voyage magique à Tokyo Disney World, où chaque coin offre une expérience féerique.
-                Des parades vibrantes aux attractions palpitantes, l'esprit enjoué de Disney vous transporte dans un monde enchanté.
-            </p>
-            <div class="galerie">
-                <!-- Ajoutez 4 photos de Tokyo Disney World ici -->
-                <img src="images/tokyo/tokyo__Disney1.jpg" alt="Photo 1">
-                <img src="images/tokyo/tokyo__Disney4.jpg" alt="Photo 2">
-            </div>
-        </article>
-
-        <!-- Cat Cafe -->
-        <article class="activite">
-            <h3>Détente au Cat Cafe</h3>
-            <p>
-                Une escapade paisible vous attend au Cat Cafe, où l'arôme du café se mêle aux ronronnements doux des chats.
-                Profitez d'une atmosphère relaxante et de moments câlins avec des compagnons félins charmants.
-            </p>
-            <div class="galerie">
-                <!-- Ajoutez 2 photos du Cat Cafe ici -->
-                <img src="images/tokyo/tokyo__catcafe1.jpg" alt="Photo 1">
-                <img src="images/tokyo/tokyo__catcafe2.jpg" alt="Photo 2">
-            </div>
-        </article>
-
-        <!-- Événement Valorant Masters -->
-        <article class="activite">
-            <h3>Frénésie Esportive à l'Événement Valorant Masters</h3>
-            <p>
-                Plongez dans l'excitation compétitive de l'Événement Valorant Masters à Tokyo, où les meilleures équipes s'affrontent.
-                Découvrez les tactiques innovantes, ressentez l'énergie des fans et vibrez avec l'intensité du monde de l'e-sport.
-            </p>
-            <div class="galerie">
-                <!-- Ajoutez 2 photos de l'Événement Valorant Masters ici -->
-                <img src="images/tokyo/tokyo__masters1.jpg" alt="Photo 1">
-                <img src="images/tokyo/tokyo__masters2.jpg" alt="Photo 2">
-            </div>
-        </article>
-
-        <!-- Pokemon Center -->
-        <article class="activite">
-            <h3>Aventure Pokémon au Pokemon Center</h3>
-            <p>
-                Plongez dans l'univers coloré de Pokémon au Pokemon Center de Tokyo, un paradis pour les dresseurs et les fans.
-                Découvrez des créatures adorables, des objets exclusifs et vivez une aventure Pokémon inoubliable.
-            </p>
-            <div class="galerie">
-                <!-- Ajoutez 2 photos du Pokemon Center ici -->
-                <img src="images/tokyo/tokyo__Pokemon1.jpg" alt="Photo 1">
-                <img src="images/tokyo/tokyo__pokemon2.jpg" alt="Photo 2">
-            </div>
-        </article>
-
-        <!-- Tokyo TeamLab -->
-        <article class="activite">
-            <h3>Voyage Sensoriel au Tokyo TeamLab</h3>
-            <p>
-                Explorez des mondes artistiques et interactifs au Tokyo TeamLab, où l'art prend vie dans une expérience captivante.
-                Plongez dans des installations visuelles époustouflantes et laissez-vous emporter par la magie sensorielle de cet endroit unique.
-            </p>
-            <div class="galerie">
-                <!-- Ajoutez 2 photos du Tokyo TeamLab ici -->
-                <img src="images/tokyo/tokyo_ACTTL.jpg" alt="Photo 1">
-                <img src="images/tokyo/tokyo_ACTTL2.jpg" alt="Photo 2">
-            </div>
-        </article>
-        </article>
-    
-        <!-- Lieux Historiques -->
-        <article class="site-Historique">
-            <h3>Temple Senso-ji</h3>
-            <p>le plus vieux temple de la capitale japonaise</p>
-            <div class="galerie">
-            <img src="images/tokyo/senso-ji_1.jpg" alt="photo 1">
-            <img src="images/tokyo/senso-ji_3.jpg" alt="photo 2">
-            </div>
-        </article>
-    
-        <!-- Délices Culinaires -->
-        <article class="cuisine">
-            <h4>Délices Culinaires</h4>
-            <p>
-                Ne manquez pas les sushis frais du marché de Tsukiji et les spécialités de ramen dans les petites
-                échoppes locales.
-            </p>
-        </article>
-    </section>
-
-
-
-
-
-
-
-    <section id="osaka">
-        <h3>Osaka</h3>
-        <!-- Ajoutez les détails pour Osaka : coups de cœur, lieux historiques, activités, délices culinaires -->
-    </section>
-
-
-
-
-
-
-    <section id="nara">
-        <h3>Nara</h3>
-        <!-- Ajoutez les détails pour Nara : coups de cœur, lieux historiques, activités, délices culinaires -->
-    </section>
-
-
-
-
-
-    <section id="kyoto">
-        <h3>Kyoto</h3>
-        <!-- Ajoutez les détails pour Kyoto : coups de cœur, lieux historiques, activités, délices culinaires -->
-    </section>
-
-
-
-
-
-    <section id="hiroshima">
-        <h3>Hiroshima</h3>
-        <!-- Ajoutez les détails pour Hiroshima : coups de cœur, lieux historiques, activités, délices culinaires -->
-    </section>
-
-
-
-
-
-
-    <section id="himeji">
-        <h3>Himeji</h3>
-        <!-- Ajoutez les détails pour Himeji : coups de cœur, lieux historiques, activités, délices culinaires -->
-    </section>
-
-
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-    <section id="couts" >
-      <div class="content">
-          <h2 id="tableau__h2">Coûts</h2>
-          <div class="section-content">
-        <p id="tableau__p">
-          L'anticipation d'un voyage au Japon de 22 jours nécessite
-          une planification méticuleuse, notamment sur le plan financier.
-          Pour vous offrir une vision détaillée de la répartition des dépenses,
-          le tableau ci-dessous présente un breakdown du budget, segmenté par
-          catégories telles que l'hébergement, le transport, les repas, les activités,
-          et autres. Ces estimations en dollars canadiens (CAD) couvrent chaque semaine
-          du séjour et sont conçues pour vous offrir un guide financier précis, vous
-          permettant ainsi de maximiser votre expérience tout en restant dans les limites
-          budgétaires établies. Cette approche proactive contribuera à transformer votre
-          voyage en une aventure inoubliable, en évitant les pièges financiers potentiels
-          et en favorisant une exploration sereine et bien planifiée.
-      </p>
-      
-</div>
-
-<div class="table-container">
-  <table>
-    <caption>Budget Voyage au Japon (22 jours)</caption>
-    <thead>
-      <tr>
-        <th>Catégorie</th>
-        <th>Semaine 1</th>
-        <th>Semaine 2</th>
-        <th>Semaine 3</th>
-        <th>Coûts estimé (en CAD)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Hébergement</td>
-        <td>200$</td>
-        <td>280$</td>
-        <td>450$</td>
-        <td>930$</td>
-      </tr>
-      <tr>
-        <td>Transport</td>
-        <td>240$</td>
-        <td>240$</td>
-        <td>320$</td>
-        <td>800$</td>
-      </tr>
-      <tr>
-        <td>Repas</td>
-        <td>250$</td>
-        <td>250$</td>
-        <td>325$</td>
-        <td>825$</td>
-      </tr>
-      <tr>
-        <td>Activités</td>
-        <td>80$</td>
-        <td>120$</td>
-        <td>200$</td>
-        <td>400$</td>
-      </tr>
-      <tr>
-        <td>Wi-fi</td>
-        <td>10$</td>
-        <td>10$</td>
-        <td>15$</td>
-        <td>35$</td>
-    </tr>
-    <tr>
-        <td>Assurance</td>
-        <td>50$</td>
-        <td>50$</td>
-        <td>50$</td>
-        <td>150$</td>
-    </tr>
-    <tr>
-        <td>Billet D'avion</td>
-        <td colspan="3"></td>  
-        <td>1600$</td>
-    </tr>
-</tbody>
-<tfoot>
-    <tr>
-        <td>Total</td>
-        <td colspan="3"></td>
-        <td>4740$</td>
-    </tr>
-</tfoot>
-  </table>
-  <p class="legend">* Le total ne comprend pas les achats personnels.</p>
-</div>
-        
-        <div class="resources-rectangle">
-          <p class="resources-header">Ressources pour bien budgeter un voyage :</p>
-          <div class="resource-column">
-              <div class="resource-item">
-                  <a href="https://budgetyourtrip.com/" class="resource-link" target="_blank">BudgetYourTrip</a>
-                  <p class="resource-description">Estimez les coûts de voyage dans le monde entier.</p>
-              </div>
-              <div class="resource-item">
-                  <a href="https://trabeepocket.com/" class="resource-link" target="_blank">Trabee Pocket</a>
-                  <p class="resource-description">Application mobile pour suivre vos dépenses de voyage.</p>
-              </div>
-        </div>
-        <div class="resource-column">
-              <div class="resource-item">
-                <a href="https://www.voyagesarabais.com/" class="resource-link" target="_blank">Voyages à Rabais</a>
-                <p class="resource-description">Offres et astuces pour économiser sur les voyages.</p>
-            </div>
-            <div class="resource-item">
-                <a href="https://voyageons-autrement.com/" class="resource-link" target="_blank">Voyageons Autrement</a>
-                <p class="resource-description">Conseils pour voyager de manière responsable et écologique.</p>
-            </div>
-      </div>
-      </div>
     </section>
 
 
@@ -510,9 +656,94 @@
 
 
 
-
+    <!-- Section pour la galerie d'images -->
     <section id="galerie">
-        <h2>MON CARNET DE VOYAGE</h2>
+
+        <!-- Titre de la section -->
+        <h2>Galerie</h2>
+
+        <!-- Description de la section -->
+        <p>Voici une galerie comportant d'autres images de mon voyages.</p>
+
+
+        <!-- Conteneur d'images -->
+        <div class="image-container">
+
+            <!-- Première image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/bambouForest.png" alt="Image 1">
+                <div class="caption">La forêt de bambous à Kyoto</div>
+            </div>
+
+            <!-- Deuxième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/catcafe.png" alt="Image 2">
+                <div class="caption">Cat Cafe à Tokyo</div>
+            </div>
+
+            <!-- troisième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/DisneyTokyo.png" alt="Image 2">
+                <div class="caption">Tokyo Disney World</div>
+            </div>
+
+            <!-- quatrieme image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/ebisugashi.png" alt="Image 2">
+                <div class="caption">Ebisugashi à Osaka</div>
+            </div>
+
+            <!-- cinquième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/festivalFleur.png" alt="Image 2">
+                <div class="caption">Festival des fleurs à Hiroshima</div>
+            </div>
+
+            <!-- sixième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/HiroshimaCastle.png" alt="Image 2">
+                <div class="caption">le château d'hiroshima</div>
+            </div>
+
+            <!-- septième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/kiyomizu-dera.png" alt="Image 2">
+                <div class="caption">Kiyomizu dera à Kyoto</div>
+            </div>
+
+            <!-- huitième image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/namba_YasakaShrine.png" alt="Image 2">
+                <div class="caption">Namba Yasaka Shrine à Osaka</div>
+            </div>
+
+            <!-- 9 image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/senso-ji.png" alt="Image 2">
+                <div class="caption">Temple Senso-ji</div>
+            </div>
+
+            <!-- 10 image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/usjHP.png" alt="Image 2">
+                <div class="caption">Harry Potter à USJ</div>
+            </div>
+
+            <!-- 11 image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/usjNintendo.png" alt="Image 2">
+                <div class="caption">Nintendo World à USJ</div>
+            </div>
+
+            <!-- 12 image -->
+            <div class="image-wrapper">
+                <img src="./images/Galerie/valorantMasters.png" alt="Image 2">
+                <div class="caption">Valorant Esport tournois</div>
+            </div>
+
+        </div>
+        
+
     </section>
 
 
@@ -524,9 +755,47 @@
 
 
 
-
+    <!-- Section pour les vidéos -->
     <section id="video">
-        <h2>MON CARNET DE VOYAGE</h2>
+        <!-- Titre de la section -->
+        <h2>Vidéo</h2>
+
+        <!-- Description de la section -->
+        <p>
+            La recherche du voyage parfait peut être une aventure en soi, 
+            et YouTube offre une plateforme riche en ressources pour vous 
+            inspirer dans votre quête. Explorez des vidéos captivantes qui vous 
+            emmèneront à travers les destinations les plus époustouflantes du monde. 
+            Vous trouverez sur YouTube une multitude de créateurs de contenu partageant 
+            leurs expériences de voyage, des conseils pratiques aux aventures inédites.
+        </p>
+
+        <!-- Deuxième paragraphe de la description -->
+        <p>
+            Voici quelques-unes des vidéos que j'ai sélectionnées pour vous, 
+            offrant un aperçu unique du Japon. De l'effervescence des rues de Tokyo 
+            à l'atmosphère de Osaka, chaque vidéo offre une perspective spéciale 
+            qui peut vous guider dans la planification de votre propre voyage mémorable.
+        </p>
+
+        <!-- Conteneur des vidéos -->
+        <div class="videos-container">
+
+        <!-- Première vidéo -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/QDk6c2w6NfU"  ></iframe>
+        </div>
+    
+        <!-- Deuxième vidéo -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/2RwTm__Bg20"  ></iframe>
+        </div>
+    
+        <!-- Troisième vidéo -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/bE3c7nateHM"  ></iframe>
+        </div>
+    </div>
     </section>
 
 
@@ -538,53 +807,118 @@
 
 
 
+    <!-- Section pour l'inscription -->
     <section id="inscription">
-      <h2>Inscription</h2>
-      <p class="p__inscription">
-        Je suis ravi de partager mes aventures avec vous.
-        Avant de continuer, prenez un moment pour vous inscrire
-        et recevoir des mises à jour exclusives directement dans 
-        votre boîte de réception.
-      </p>
-      <form>
-          <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" required>
+        <!-- Titre de la section -->
+        <h2>Inscription</h2>
 
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required>
+        <!-- Paragraphe d'introduction à l'inscription -->
+        <p class="p__inscription">
+            Je suis ravi de partager mes aventures avec vous.
+            Avant de continuer, prenez un moment pour vous inscrire
+            et recevoir des mises à jour exclusives directement dans
+            votre boîte de réception.
+        </p>
 
-          <div class="flex-container">
-            <div class="width-48">
-                <label for="age">Âge :</label>
-                <input type="number" id="age" name="age" min="1" max="100" required>
+        <!-- Formulaire d'inscription -->
+        <form>
+
+            <!-- Champ pour le prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+
+            <!-- Champ pour le nom -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+
+            <!-- Conteneur flexible pour l'âge et le sexe -->
+            <div class="flex-container">
+
+                <!-- Champ pour l'âge -->
+                <div class="width-48">
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="1" max="100" required>
+                </div>
+
+                <!-- Champ pour le sexe -->
+                <div class="width-48">
+                    <label for="sexe">Sexe :</label>
+                    <select id="sexe" name="sexe" required>
+                        <option value="" disabled selected>Choisir votre genre</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
             </div>
-            <div class="width-48">
-                <label for="sexe">Sexe :</label>
-                <select id="sexe" name="sexe" required>
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                    <option value="autre">Autre</option>
-                </select>
-            </div>
+
+            <!-- Champ pour l'email -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Bouton d'envoi du formulaire -->
+            <button type="submit">Envoyer</button>
+
+            <!-- Bouton pour réinitialiser le formulaire -->
+            <button type="reset">Effacer</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Section pour le pied de page -->
+    <footer id="piedDePage">
+
+        <!-- Adresse du Collège -->
+        <div class="adresse">
+            <h3>Adresse du Collège</h3>
+            <p>3800 R.Sherbrooke E</p>
+            <p>Montréal,Qc</p>
+            <p>H1X 2A2</p>
         </div>
 
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required>
+        <!-- Liens importants -->
+        <div class="liens-importants">
+            <h3>Liens importants</h3>
+            <ul>
+                <li><a
+                        href="https://tim.cmaisonneuve.qc.ca/?_gl=1*1g1r4v1*_ga*MTk1MzU5MDA0MC4xNjk5MDU4NTkz*_ga_81H4N0JCRV*MTcwMjg2ODA5MC41LjAuMTcwMjg2ODA5MC42MC4wLjA." target="_blank">Page
+                        du TIM</a></li>
+                <li><a href="https://www.behance.net/departement_tim" target="_blank">Behance TIM</a></li>
+                <li><a href="https://www.cmaisonneuve.qc.ca/" target="_blank">Le collège</a></li>
+                
+            </ul>
+        </div>
 
-          <button type="submit">Envoyer</button>
-          <button type="reset">Effacer</button>
-      </form>
-  </section>
+        <!-- Description du département -->
+        <div class="description-departement">
+            <h3>Description du département</h3>
+            <p>Le département du TIM offre une éducation de qualité sur le multimédia au collège de Maisonneuve.</p>
+        </div>
 
+        <!-- Réseaux sociaux -->
+        <div class="reseaux-sociaux">
+            <h3>Réseaux sociaux</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/_c.amille_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.behance.net/camillegirard01" target="_blank"><i class="fab fa-behance"></i> Behance</a></li>
+                <li><a href="https://github.com/GirardCamille?tab=projects" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </div>
 
-
-
-
-
-
-
-
-    <footer id="piedDePage"></footer>
+        <!-- Avis de confidentialité -->
+        <div class="avis-confidentialite">
+            <p>Avis de confidentialité | Privacy Notice</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,79 @@
+/* Styles pour la section du pied de page */
+#piedDePage {
+    background-color: #2f2c7d; /* Couleur de fond */
+    padding: 20px; /* Remplissage */
+    color: white; /* Couleur du texte */
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-around; /* Centre les éléments horizontalement avec un espace entre eux */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments fils */
+    font-family: 'Merriweather', serif; /* Police de caractères */
+}
+
+/* Styles pour chaque élément div dans la section du pied de page */
+#piedDePage div {
+    width: 25%; /* Largeur de l'élément div */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+/* Styles pour les titres h3 dans la section du pied de page */
+#piedDePage h3 {
+    font-size: 1.5em; /* Taille de police */
+    margin-bottom: 15px; /* Marge en bas */
+    font-family: 'Bebas Neue', sans-serif; /* Police de caractères */
+}
+
+/* Styles pour la section des réseaux sociaux dans le pied de page */
+.reseaux-sociaux {
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Direction de colonne pour les éléments fils */
+}
+
+/* Styles pour les listes à puces dans la section des réseaux sociaux */
+.reseaux-sociaux ul {
+    list-style-type: none; /* Pas de marqueurs de liste */
+    padding: 0; /* Aucun remplissage */
+}
+
+/* Styles pour chaque élément de liste dans la section des réseaux sociaux */
+.reseaux-sociaux li {
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+/* Styles pour les liens dans la section des réseaux sociaux */
+.reseaux-sociaux a {
+    text-decoration: none; /* Pas de soulignement du texte */
+    color: #fff; /* Couleur du texte */
+    display: flex; /* Affichage en flexbox */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+/* Styles pour les icônes dans la section des réseaux sociaux */
+.reseaux-sociaux i {
+    margin-right: 10px; /* Marge à droite */
+    color: #e20612; /* Couleur de l'icône */
+    font-size: 1.2em; /* Taille de police */
+}
+
+/* Styles pour le paragraphe dans la section d'avis de confidentialité */
+.avis-confidentialite p {
+    font-size: 0.9em; /* Taille de police */
+}
+
+/* Règles de média query pour la réactivité */
+@media only screen and (max-width: 768px) {
+    #piedDePage h3 {
+        font-size: 1.2em; /* Ajustez si nécessaire */
+    }
+
+    #piedDePage p {
+        font-size: 0.8em; /* Ajustez si nécessaire */
+    }
+
+    #piedDePage a {
+        font-size: 0.8em; /* Ajustez si nécessaire */
+    }
+
+    .avis-confidentialite p {
+        font-size: 0.5em; /* Ajustez si nécessaire */
+    }
+}

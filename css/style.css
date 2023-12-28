@@ -1,36 +1,42 @@
+/* Réinitialisation des marges et des rembourrages par défaut */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Boîte de modèle de la page HTML */
 html {
   box-sizing: border-box;
 }
 
+/* Boîte de modèle pour tous les éléments, y compris les pseudo-éléments ::before et ::after */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+/* Comportement de défilement fluide pour les liens internes */
 html {
   scroll-behavior: smooth;
 }
 
+/* Styles généraux du corps de la page */
 body {
   min-height: 100vh;
   font-family: 'Bebas Neue', sans-serif;
 }
 
+/* Styles pour les sections avec une hauteur de 100vh, disposition flex et marge de défilement */
 section {
   height: 100vh;
   border: 1px solid black;
   display: flex;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px; /* Marge de défilement pour s'assurer que le contenu défile correctement sous le haut de page fixe */
   flex-direction: column;
 }
 
-/* HEADER */
+/* Styles pour l'en-tête fixe */
 #hautDePage {
   position: sticky;
   top: 0;
@@ -45,10 +51,12 @@ section {
   z-index: 100;
 }
 
+/* Styles pour le logo dans l'en-tête */
 #hautDePage__logo {
   max-height: 100px;
 }
 
+/* Styles pour la navigation dans l'en-tête */
 #hautDePage__nav {
   display: flex;
   justify-content: flex-end;
@@ -83,8 +91,7 @@ section {
   width: 100%;
 }
 
-
-
+/* Styles pour la barre de recherche dans l'en-tête */
 #hautDePage__search {
   display: flex;
   align-items: center;
@@ -100,6 +107,7 @@ section {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Styles pour l'icône de recherche dans l'en-tête */
 .search-container {
   position: relative;
 }
@@ -122,8 +130,8 @@ section {
   cursor: pointer;
 }
 
+/* Styles pour le changement de couleur au clic dans la navigation */
 #hautDePage__nav a:active {
   color: white;
-  transition-duration:unset;
+  transition-duration: unset;
 }
-
